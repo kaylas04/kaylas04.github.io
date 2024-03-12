@@ -1,0 +1,685 @@
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  .heading h2 {
+      animation-name: slideIn;
+      animation-duration: 800ms;
+      animation-delay: 1100ms;
+      animation-fill-mode: both; 
+  }
+  
+  .menu1 {
+      animation-name: slideIn;
+      animation-duration: 800ms;
+      animation-delay: 1100ms;
+      animation-fill-mode: both;
+  }
+  
+
+  .coffee-section h2,
+  .coffee-section .karla {
+      animation-name: slideIn;
+      animation-duration: 800ms;
+      animation-delay: 1100ms;
+      animation-fill-mode: both;
+  }
+  
+ 
+  .tasting-house-info h1,
+  .tasting-house-info p,
+  .map1 {
+      animation-name: slideIn;
+      animation-duration: 800ms;
+      animation-delay: 1100ms;
+      animation-fill-mode: both;
+  }
+
+  
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif; 
+}
+.promo-bar {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 0.85em;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color:rgb(251, 251, 234);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-menu {
+    flex-grow: 1;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    margin-right: 1em;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-menu ul li {
+    margin-right: 1em;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.sign_button {
+    border: 2px solid #000; 
+    background: transparent; 
+    color: #000; 
+    padding: 10px 20px; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.map1 {
+    border: 2px solid #000; 
+    background: transparent; 
+    color: #000; 
+    padding: 10px 20px; 
+    font-size: karla; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 20px;
+}
+
+.menu1 {
+    border: 2px solid #000; 
+    background: transparent; 
+    color: #000; 
+    padding: 10px 20px;
+    font-size: karla; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.join_button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: karla;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+.sign_button:hover {
+    background-color: #fff;
+    color: #000f;
+}
+
+.join_button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.cart-icon {
+    width: 24px;
+    margin-right: 0.5em;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif
+}
+
+.cart button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.tasting-house-info, .coffee-section {
+    text-align: center;
+    padding: 3em 1em;
+    
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+  }
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+  }
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 200;
+    font-size: 60px;
+    font-style: normal;
+  }
+
+h4 {
+    font-family: 'karla', cursive;
+    font-weight: 20;
+    font-size: 18px;
+    font-style: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.karla{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-section {
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.shop-image {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    margin-left: 150px;
+    margin-top: none;
+}
+
+.coffee-image {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+    margin-right: 180px;
+    bottom: 0;
+    margin-top: none;
+}
+
+.tasting-house-info {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.piggy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-coffee-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgb(248, 248, 242)
+}
+
+.specialty-coffee-text p {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 5px 0;
+}
+
+.shop-link {
+    align-items: center;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    margin: 5px 0;
+    margin-top: 5px;
+}
+
+.coffee-circle {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+    margin-top: 120px;
+    margin-left: 40px; 
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+.coffee-circle:hover {
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.world-in-your-cup-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-item img {
+    width: 100%; 
+    border-radius: 15px; 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+}
+
+.image-item img:hover {
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+.image-item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rounded-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+
+.site-footer {
+    background-color: rgb(251, 251, 234);
+    color: #333;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand img {
+    max-width: 120px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-style: light;
+}
+
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+
+
+.footer-column li {
+    margin-bottom: 20px;
+}
+
+
+.footer-column {
+    display: inline-block;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 20px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px rgb(251, 251, 234);
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.coffee_menu {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.coffee_menu h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.coffee_menu p {
+    font-family: 'Karla', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-button {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    padding: 10px 20px;
+    font-size: karla;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color:black;
+    
+}
+
+.coffee_2 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.menu-section {
+    margin-top: 90px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.scroll-menu {
+    display: flex;
+    background-color:rgb(248, 248, 242);
+    align-items: flex-end;
+    overflow-x: auto;
+    padding-left: 100px;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 120px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+.menu-item span {
+    display: block;
+    margin: 10px 0;
+}
+
+.menu-item:last-child {
+    margin-right: 90;
+}
+
+.menu-item .order-button {
+    background: transparent;
+    color: #000;
+    padding: 10px 20px;
+    font-size: karla;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color:black;
+    
+}
+
+.menu-section::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-section {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.best-sellers-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.best-seller-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+}
+
+
+.best-seller-image, .best-seller-text {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.best-seller-text p {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.best-seller-image img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.left {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.right {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+h5 {
+    font-family: 'karla', cursive;
+    font-weight: 20;
+    font-size: 18px;
+    font-style: bold;
+    padding-right: 4.5rem
+}
+
+h6 {
+    font-family: 'karla', cursive;
+    font-weight: 20;
+    font-size: 18px;
+    font-style: bold;
+    padding-left: 4.5rem
+}
+
+h7 {
+    font-family: 'karla', cursive;
+    font-weight: 20;
+    font-size: 18px;
+    font-style: bold;
+    padding-right: 4.5rem;
+}
+
+.best-seller-row:nth-child(odd) .best-seller-image {
+    order: 2;
+}
+
+.best-seller-row:nth-child(even) .best-seller-text {
+    order: 2;
+}
+
+/* Map*/
+
+
+.container{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+iframe{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    width:80%;
+    height: 500px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: -25px;
+
+}
+
+#chicken {
+    margin-top: 40px;
+}
