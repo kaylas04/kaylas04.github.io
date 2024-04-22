@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Nosifer&display=swap');
+.title-container .title {
+    font-family: 'Nosifer', cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid white;  
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+  
+  .top-nav {
+    position: absolute;
+    top: 30px;
+    left: 0; 
+    width: 100%; 
+    padding-left: 50px; 
+    z-index: 1000;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .top-nav ul li {
+    display: inline-block; 
+    margin-right: 70px; 
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    color: rgb(248, 244, 244); 
+    font-family: 'Kelly Slab', cursive; 
+    font-size: 1.2em; 
+    padding: 10px 0; 
+    transition: color 0.3s;
+  }
+  
+  .top-nav a:hover {
+    color: rgb(162, 162, 173); 
+    text-decoration: underline;
+  }
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .title {
+    font-size: 5em;
+    color: rgb(248, 244, 244);
+    text-transform: uppercase;
+    display: inline;
+  }
+  
+  .intro-text p {
+    display: inline-block;
+    color: rgb(248, 244, 244);
+    font-family: 'Kelly Slab', cursive;
+  }
+
+.intro-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 80%; 
+    padding: 20px; 
+    text-align: center;
+    color: rgb(248, 244, 244); 
+    margin-top: 150px;
+  }
+
+  .bg-image {
+    background-image: url('assets/img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+  }
+
+  body, html {
+    height: 100%;
+  }
+  .ready-section {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    background-color: rgb(14, 46, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .ready-title {
+    color: white;
+    font-family: 'Nosifer', cursive;
+    font-size: 5em;
+    overflow: hidden;
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button ul {
+    list-style: none;
+}
+
+.back-button li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button li a:hover {
+    background-color: #ddd;
+}
+
+.container {
+    text-align: center; 
+}
+
+.container h1 {
+    margin-bottom: 20px; 
+}
+
+
+.trip {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px; 
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.5em; 
+    animation: flash 1.5s infinite alternate;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.trip a {
+    text-decoration: none; 
+    color: white; 
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.trip a:hover {
+    color: #AAF;
+}
+.trip ul {
+    list-style-type: none; 
+    padding: 0;
+  }
+
+
+  .left-center {
+    position: absolute;
+    top: 50%; 
+    left: -350px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.cp img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: -130px;
+}
+
+.clickmap {
+  font-family: 'Nosifer', cursive;
+    text-align: center; 
+    font-size: 2.5em;
+    color: #333; 
+}
+
+#tahoe-map img{
+	width: 500px;
+	position:relative;
+	margin-left: 470px;
+	margin-top: 1px;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#pin1 img{
+	width: 60px;
+	margin-left: -150px;
+	margin-top: 420px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#pin1 img:hover{
+    width: 70px;
+    margin-left: -150px;
+	margin-top: 420px;
+    position:absolute;
+}
+
+#pin2 img{
+	width: 60px;
+	margin-left: -250px;
+	margin-top: 10px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#pin2 img:hover{
+	width: 70px;
+	margin-left: -250px;
+	margin-top: 10px;
+	position:absolute;
+}
+
+#pin3 img{
+	width: 60px;
+    margin-left: -270px;
+	margin-top: 10px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#pin3 img:hover{
+	width: 70px;
+    margin-left: -270px;
+	margin-top: 10px;
+	position:absolute;
+}
+#pin4 img{
+	width: 60px;
+	margin-left: -120px;
+	margin-top: 120px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#pin4 img:hover{
+	width: 70px;
+    margin-left: -120px;
+	margin-top: 120px;
+	position:absolute;
+}
+
+html {
+    background-color:rgb(248, 244, 244);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kelly Slab", sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+
+.go {
+    font-family: "Kelly Slab";
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    top: 30px; 
+    left: 30px; 
+    text-decoration: none;
+}
+
+.name, .info {
+    text-align: center; 
+    width: 60%; 
+    margin: 0 auto;
+}
+
+.name {
+    font-family: "Nosifer", cursive;
+    font-size: 80px;
+    margin-top: -250px;
+    margin-bottom: 20px; 
+}
+
+.info {
+    font-family: "Kelly Slab";
+    font-size: 15px;
+    margin-bottom: 30px; 
+}
+
+/* Image containers */
+#draw, #p1 {
+    position: absolute;
+    bottom: 50px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 500px; 
+}
+
+#draw img, #p1 img{
+    width: 100%; 
+    display: block; 
+}
+
+/* Animation keyframes */
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+	20% {opacity: 1;}
+	25% {opacity: 0;}
+	75% {opacity: 0;}
+	100% {opacity: 1;} 
+}
+
+
+
+
+/* Apply the animation */
+#draw img {
+    animation: fadeInOut 4s infinite;
+}
+#p1 img {
+    animation: fadeInOut 3s infinite 2s; 
+}
